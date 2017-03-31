@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="58e6d0e5eb6b7df16de3cc4a8a4d6c3864e52ceb">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7b1d18f99bf2a68e87f1d78ddabbde20ebd78771\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b629ca9742496260dc91db35259e7bc13acc6863">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d544242e09ef60c63fa64dcae0b9c44a3d30f455\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_13b3ae9cb515334c1b5a5a009ba97e5202c52369\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_82156dd7285dbfc488d3d98a6c3941f200404172\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_3221119afbce4a43b3fd866e7ccfbf7310c44877\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bd0c2820411e17849819be738300a2776a2be30">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d71305283126a1f0edf4e85f2d092655ec26b36a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0019e7027836d09522f31ca98407d1cdd5fd6379">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_84e825230aeb27335026072bde6f17a27c2d195c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_1cd11f8c98ae7951686a294c3d12a92227161013\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_e5f3f1cb0e91284c2f359695bf0c303ca74e51ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_337169c39f68144e8ab44323c367fcb89e644142\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_ac9b0d56c07a73dd251f1c8f0a886fc4a6a59503\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_bdaeefdf9f3ca76709f45f4dece55c270861c100\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_c819ab011830d25a5e9997bfde2c34635022867f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_bb93fac7ab290b5bf17766ef50295169da30a62b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_fc706717d8ee150082fbd3a217faea3c8622ad6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_c8947135dc2574455d1ce83d7ca7b3d4afd10bfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_ac78e748b9b93468cf993e558812c4823c03f282\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_ce9ef85be31f2202162f9f7845dcb0eff3c597da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_538b2f1318159d05e55869bd339c820c8b90323f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_0635727106aab214a2b490fa7e1270aadb8b71f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_852b8c63fd4253e136889a83e94aaed8bb2fda18\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\bromy\Desktop\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_51b02887890a1da0fe1db4beb389417268ded4a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\ProjetFinal\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\git\ProjetFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_6d573d096549bb4434cd8076d30441204fdeea2e\classes.dex" />
+    </item>
+
+</items>

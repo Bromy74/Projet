@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\git\MySQL-PHP-JSON\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_eb29bfe72b9b39674013c5f30370caf0ddec57d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\MySQL-PHP-JSON\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.0_d6a163d90e2d0e8143b39b4c03fbf49f5a376058\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\MySQL-PHP-JSON\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="63cc13f8ef125e6b3c4a4c384f4a77089eb22e51">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1593a58ff692c311a5664fcfb8d7eb6042955b38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\MySQL-PHP-JSON\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="777432b4e38d41346d6b536f3e6243825d129245">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_82c7865db53bdd1435975c6f32d07b296684d6eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\git\MySQL-PHP-JSON\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.0_77b395b92b48a35303190a7f849d8394248abea9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.19\a8f23f65fc1e522ee4a1a697ee569901a46741fa\library-1.0.19.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-1.0.19_a6246f6f6728e1d0a08334ebd2eb33098a457d29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\bromy\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="D:\git\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.0_58fe2baee4017bc7cc65bc3918011efc716fa2ec\classes.dex" />
+    </item>
+
+</items>
