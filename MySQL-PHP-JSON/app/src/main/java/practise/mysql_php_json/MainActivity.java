@@ -37,87 +37,42 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        firstname = (EditText) findViewById(R.id.editText);
-        lastname = (EditText) findViewById(R.id.editText2);
-        age = (EditText) findViewById(R.id.editText3);
-        insert = (Button) findViewById(R.id.insert);
-        show = (Button) findViewById(R.id.showstudents);
         result = (TextView) findViewById(R.id.textView);
 
 
         requestQueue = Volley.newRequestQueue(getApplicationContext());
 
-        show.setOnClickListener(new View.OnClickListener() {
-
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
+                showUrl, new Response.Listener<JSONObject>() {
             @Override
-            public void onClick(View view) {
-                System.out.println("ww");
-                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
-                        showUrl, new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        System.out.println(response.toString());
-                        try {
-                            JSONArray etudiants = response.getJSONArray("etudiants");
-                            for (int i = 0; i < etudiants.length(); i++) {
-                                JSONObject commerces = etudiants.getJSONObject(i);
+            public void onResponse(JSONObject response) {
+                System.out.println(response.toString());
+                try {
+                    JSONArray etudiants = response.getJSONArray("etudiants");
+                    for (int i = 0; i < etudiants.length(); i++) {
+                        JSONObject commerces = etudiants.getJSONObject(i);
 
-                                String firstname = commerces.getString("firstname");
-                                String lastname = commerces.getString("lastname");
-                                String age = commerces.getString("age");
+                        String firstname = commerces.getString("firstname");
+                        String lastname = commerces.getString("lastname");
+                        String age = commerces.getString("age");
 
-                                result.append(firstname + " " + lastname + " " + age + " \n");
-                            }
-                            result.append("===\n");
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-
+                        result.append(firstname + " " + lastname + " " + age + " \n\n");
                     }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        System.out.append(error.getMessage());
+                    //result.append("===\n");
 
-                    }
-                });
-                requestQueue.add(jsonObjectRequest);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.append(error.getMessage());
+
             }
         });
-
-        insert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StringRequest request = new StringRequest(Request.Method.POST, insertUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                        System.out.println(response.toString());
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-
-                    }
-                }) {
-
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String,String> parameters  = new HashMap<String, String>();
-                        parameters.put("firstname",firstname.getText().toString());
-                        parameters.put("lastname",lastname.getText().toString());
-                        parameters.put("age",age.getText().toString());
-
-                        return parameters;
-                    }
-                };
-                requestQueue.add(request);
-            }
-
-        });
-
+        requestQueue.add(jsonObjectRequest);
 
     }
 
