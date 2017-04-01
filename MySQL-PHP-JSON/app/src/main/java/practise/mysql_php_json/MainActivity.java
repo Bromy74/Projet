@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
                         result.append(firstname + " " + lastname + " " + age + " \n\n");
                     }
-                    //result.append("===\n");
 
                 } catch (JSONException e) {
                     e.printStackTrace();

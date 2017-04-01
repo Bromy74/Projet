@@ -1,31 +1,98 @@
 package com.test.projetfinal;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     ListView mListView;
     public List categories;
     public CategorieAdapter adapter;
+    RequestQueue requestQueue;
+    String showUrl = "http://192.168.1.87/Php/showCategorie.php";
+    ArrayList T_alimentaire_description = new ArrayList();
+    ArrayList T_alimentaire = new ArrayList();
+    String T1[] = new String[14];
+
+
+
+
+
+
+
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mListView = (ListView) findViewById(R.id.listView);
 
-        categories = genererCategorie(null);
+        requestQueue = Volley.newRequestQueue(getApplicationContext());
 
-        adapter = new CategorieAdapter(MainActivity.this,categories,mListView);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
+                showUrl, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+
+                System.out.println(response.toString());
+                try {
+                    JSONArray etudiants = response.getJSONArray("etudiants");
+
+                    Map<String, Categorie> categories1 = new HashMap<String, Categorie>();
+
+                    for (int i = 0; i < etudiants.length(); i++) {
+                        JSONObject categoriessql = etudiants.getJSONObject(i);//i
+
+                        String nom = categoriessql.getString("nom");
+                        String description = categoriessql.getString("description");
+                        T1[i] = "lol";
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+
+                }
+
+                categories = genererCategorie(null);
+                adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
+                mListView.setAdapter(adapter);
+
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.append(error.getMessage());
+
+            }
+        });
+        requestQueue.add(jsonObjectRequest);
+
+        categories = genererCategorie(null);
+        adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
         mListView.setAdapter(adapter);
+
     }
+//---------------------------------------------------
+
+
+
 
     private ArrayList genererCategorie(ArrayList sousCats) {
         if (sousCats != null) {
@@ -33,21 +100,41 @@ public class MainActivity extends ActionBarActivity {
         }
         ArrayList categories = new ArrayList();
 
-        // ALIMENTAIRE
-        Categorie alimentaire = new Categorie("Alimentation",R.mipmap.ic_launcher);
-        //----------------------------------------------------------------------------------------------------//
+        Categorie alimentaire = new Categorie("Alimentation"+T1[0],R.mipmap.ic_launcher);
+
+
+//--------------------------------------
+
+
+
+
+
         String T_alimentaire_description[] = {"Alimentation Générale","Boucheries - Charcuteries - Traiteurs","Boulangeries - Patisseries","Cavistes","Chocolateries - Confiseries - Glacier - Torréfaction - Thés","Fromageries","Produits diététiques, biologiques, naturels"};
         String T_alimentaire[] = {"alimgene","boucherie","boulangerie","cavistes","chocolaterie","formagerie","dietetique"};
+
+
+        // ALIMENTAIRE
+        //----------------------------------------------------------------------------------------------------//
 
         Map<String,Categorie> categories1 = new HashMap<String,Categorie>();
         for (int i =0; i<T_alimentaire.length; i++){
             String key = T_alimentaire[i];
-            Categorie value = new Categorie(T_alimentaire_description[i],R.mipmap.ic_launcher);
+            String desc = T_alimentaire_description[i]+T1[i];
+            Categorie value = new Categorie(desc,R.mipmap.ic_launcher);
             categories1.put(key, value);
-            alimentaire.addCat(categories1.get(T_alimentaire[i]));
+            alimentaire.addCat(categories1.get(key));
         }
 
 /*
+        Map<String,Categorie> categories1 = new HashMap<String,Categorie>();
+        for (int i =0; i<T_alimentaire.size(); i++){
+            String key = (String)T_alimentaire.get(i);
+            String desc = (String)T_alimentaire_description.get(i);
+            Categorie value = new Categorie(desc,R.mipmap.ic_launcher);
+            categories1.put(key, value);
+            alimentaire.addCat(categories1.get(key));
+        }
+
         // Et pour récupérer une valeur :
         Categorie c = categories.get("boucherie");
         //----------------------------------------------------------------------------------------------------//s
@@ -72,8 +159,8 @@ public class MainActivity extends ActionBarActivity {
         alimentaire.addCat(Lol);
         alimentaire.addCat(Alle);
 */
-        Categorie match = new Categorie("Match",R.mipmap.ic_launcher);
-        categories1.get("alimgene").addCat(match);
+        //Categorie match = new Categorie("Match",R.mipmap.ic_launcher);
+        //categories1.get("alimgene").addCat(match);
 
 
         // Animaux Fleuriste Jardin

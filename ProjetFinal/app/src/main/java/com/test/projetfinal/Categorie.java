@@ -1,5 +1,4 @@
 package com.test.projetfinal;
-//blablablabla
 import android.widget.ImageView;
 
 import java.util.ArrayList;
