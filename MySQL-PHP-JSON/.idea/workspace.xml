@@ -34,9 +34,10 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/practise/mysql_php_json/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            <state relative-caret-position="374">
+              <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#1420#2341#0" expanded="true" />
                 <element signature="e#2340#2341#0" expanded="true" />
                 <element signature="e#2343#2536#0" expanded="true" />
@@ -1990,6 +1991,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1420#2341#0" expanded="true" />
             <element signature="e#2340#2341#0" expanded="true" />
             <element signature="e#2343#2536#0" expanded="true" />
@@ -2011,9 +2013,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/practise/mysql_php_json/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="374">
+          <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1420#2341#0" expanded="true" />
             <element signature="e#2340#2341#0" expanded="true" />
             <element signature="e#2343#2536#0" expanded="true" />
