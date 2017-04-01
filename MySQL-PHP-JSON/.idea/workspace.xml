@@ -34,13 +34,12 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/practise/mysql_php_json/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+            <state relative-caret-position="467">
+              <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1420#2341#0" expanded="true" />
                 <element signature="e#2340#2341#0" expanded="true" />
-                <element signature="e#2343#2536#0" expanded="true" />
                 <element signature="e#2535#2536#0" expanded="true" />
               </folding>
             </state>
@@ -1670,6 +1669,24 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MySQL-PHP-JSON" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1994,7 +2011,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1420#2341#0" expanded="true" />
             <element signature="e#2340#2341#0" expanded="true" />
-            <element signature="e#2343#2536#0" expanded="true" />
             <element signature="e#2535#2536#0" expanded="true" />
           </folding>
         </state>
@@ -2013,13 +2029,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/practise/mysql_php_json/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+        <state relative-caret-position="467">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1420#2341#0" expanded="true" />
             <element signature="e#2340#2341#0" expanded="true" />
-            <element signature="e#2343#2536#0" expanded="true" />
             <element signature="e#2535#2536#0" expanded="true" />
           </folding>
         </state>

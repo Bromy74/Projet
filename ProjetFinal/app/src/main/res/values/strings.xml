@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProjetFinal</string>
+    <string name="nom_enseigne">Nom du commerce</string>
+    <string name="nom_adresse">Adresse</string>
+    <string name="nom_tel">Numéro de téléphone</string>
+
+
 </resources>
