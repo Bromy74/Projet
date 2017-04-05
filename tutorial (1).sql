@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Sam 01 Avril 2017 à 21:11
+-- Généré le :  Mer 05 Avril 2017 à 22:29
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -72,28 +72,23 @@ CREATE TABLE `commerces` (
 INSERT INTO `commerces` (`id`, `firstname`, `lastname`, `age`) VALUES
 (1, 'Le cafe ducoin', 'Rue des Arts', '0350508080'),
 (8, 'Ecole des Mines', 'Rue Grand Bail', '0658583035'),
-(9, 'Match', 'Rue du Kiosque', '0680808080');
+(9, 'Match', 'Rue du Kiosque', '0680808080'),
+(10, 'Truc', 'Bidule', '0658583035');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `commerces2`
+-- Structure de la table `products`
 --
 
-CREATE TABLE `commerces2` (
-  `id` int(10) NOT NULL,
-  `firstname` varchar(50) NOT NULL,
-  `lastname` varchar(50) NOT NULL,
-  `age` int(10) NOT NULL
+CREATE TABLE `products` (
+  `pid` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `description` text,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `commerces2`
---
-
-INSERT INTO `commerces2` (`id`, `firstname`, `lastname`, `age`) VALUES
-(1, 'Matthieu et la famille', 'Veron', 21),
-(2, 'a', 'a', 10);
 
 --
 -- Index pour les tables exportées
@@ -112,10 +107,10 @@ ALTER TABLE `commerces`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `commerces2`
+-- Index pour la table `products`
 --
-ALTER TABLE `commerces2`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`pid`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées
@@ -130,12 +125,12 @@ ALTER TABLE `categoriessql`
 -- AUTO_INCREMENT pour la table `commerces`
 --
 ALTER TABLE `commerces`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT pour la table `commerces2`
+-- AUTO_INCREMENT pour la table `products`
 --
-ALTER TABLE `commerces2`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `products`
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

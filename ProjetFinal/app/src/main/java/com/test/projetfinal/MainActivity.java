@@ -3,7 +3,6 @@ package com.test.projetfinal;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -48,23 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(response.toString());
                 try {
                     JSONArray etudiants = response.getJSONArray("etudiants");
-
-                    Map<String, Categorie> categories1 = new HashMap<String, Categorie>();
-
                     for (int i = 0; i < etudiants.length(); i++) {
-                        System.out.println("ttttttttttttttt");
-
                         JSONObject commerces = etudiants.getJSONObject(i);//i
 
                         String firstname = commerces.getString("firstname");
                         String lastname = commerces.getString("lastname");
                         T_alimentaire_description.add(firstname);
                         T_alimentaire.add(lastname);
-
-
                     }
-
-
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -81,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         requestQueue.add(jsonObjectRequest);
-
         ///categories = genererCategorie(null);
         ///adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
         ///mListView.setAdapter(adapter);
