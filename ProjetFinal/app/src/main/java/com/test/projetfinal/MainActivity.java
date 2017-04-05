@@ -29,10 +29,6 @@ public class MainActivity extends AppCompatActivity {
     String showUrl = "http://192.168.1.87/Php/showCategorie.php";
     ArrayList T_alimentaire_description = new ArrayList();
     ArrayList T_alimentaire = new ArrayList();
-    String T1[] = new String[14];
-
-
-
 
 
 
@@ -42,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mListView = (ListView) findViewById(R.id.listView);
-
         requestQueue = Volley.newRequestQueue(getApplicationContext());
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
@@ -61,17 +56,20 @@ public class MainActivity extends AppCompatActivity {
 
                         String nom = categoriessql.getString("nom");
                         String description = categoriessql.getString("description");
-                        T1[i] = "lol";
+                        T_alimentaire_description.add(description);
+                        T_alimentaire.add(nom);
+
+
                     }
+                    categories = genererCategorie(null,T_alimentaire,T_alimentaire_description);
+                    adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
+                    mListView.setAdapter(adapter);
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();
 
                 }
-
-                categories = genererCategorie(null);
-                adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
-                mListView.setAdapter(adapter);
 
 
             }
@@ -84,23 +82,24 @@ public class MainActivity extends AppCompatActivity {
         });
         requestQueue.add(jsonObjectRequest);
 
-        categories = genererCategorie(null);
-        adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
-        mListView.setAdapter(adapter);
+        ///categories = genererCategorie(null);
+        ///adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
+        ///mListView.setAdapter(adapter);
 
     }
 //---------------------------------------------------
 
 
 
+    ///private ArrayList genererCategorie(ArrayList sousCats) {
 
-    private ArrayList genererCategorie(ArrayList sousCats) {
+    private ArrayList genererCategorie(ArrayList sousCats, ArrayList A, ArrayList B) {
         if (sousCats != null) {
             return sousCats;
         }
         ArrayList categories = new ArrayList();
 
-        Categorie alimentaire = new Categorie("Alimentation"+T1[0],R.mipmap.ic_launcher);
+        Categorie alimentaire = new Categorie("Alimentation",R.mipmap.ic_launcher);
 
 
 //--------------------------------------
@@ -109,36 +108,36 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        String T_alimentaire_description[] = {"Alimentation Générale","Boucheries - Charcuteries - Traiteurs","Boulangeries - Patisseries","Cavistes","Chocolateries - Confiseries - Glacier - Torréfaction - Thés","Fromageries","Produits diététiques, biologiques, naturels"};
-        String T_alimentaire[] = {"alimgene","boucherie","boulangerie","cavistes","chocolaterie","formagerie","dietetique"};
+        //String T_alimentaire_description[] = {"Alimentation Générale","Boucheries - Charcuteries - Traiteurs","Boulangeries - Patisseries","Cavistes","Chocolateries - Confiseries - Glacier - Torréfaction - Thés","Fromageries","Produits diététiques, biologiques, naturels"};
+        //String T_alimentaire[] = {"alimgene","boucherie","boulangerie","cavistes","chocolaterie","formagerie","dietetique"};
 
 
         // ALIMENTAIRE
         //----------------------------------------------------------------------------------------------------//
-
+       /*
         Map<String,Categorie> categories1 = new HashMap<String,Categorie>();
         for (int i =0; i<T_alimentaire.length; i++){
             String key = T_alimentaire[i];
-            String desc = T_alimentaire_description[i]+T1[i];
+            String desc = T_alimentaire_description[i];
             Categorie value = new Categorie(desc,R.mipmap.ic_launcher);
             categories1.put(key, value);
             alimentaire.addCat(categories1.get(key));
-        }
+        }*/
 
-/*
+
         Map<String,Categorie> categories1 = new HashMap<String,Categorie>();
-        for (int i =0; i<T_alimentaire.size(); i++){
-            String key = (String)T_alimentaire.get(i);
-            String desc = (String)T_alimentaire_description.get(i);
+        for (int i =0; i<A.size(); i++){
+            String key = (String)A.get(i);
+            String desc = (String)B.get(i);
             Categorie value = new Categorie(desc,R.mipmap.ic_launcher);
             categories1.put(key, value);
             alimentaire.addCat(categories1.get(key));
         }
 
         // Et pour récupérer une valeur :
-        Categorie c = categories.get("boucherie");
+        //Categorie c = categories.get("boucherie");
         //----------------------------------------------------------------------------------------------------//s
-
+/*
         Categorie alimgene = new Categorie("Alimentation Générale",R.mipmap.ic_launcher);
         Categorie boucherie = new Categorie("Boucheries - Charcuteries - Traiteurs",R.mipmap.ic_launcher);
         Categorie boulangerie = new Categorie("Boulangeries - Patisseries",R.mipmap.ic_launcher);

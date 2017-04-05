@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="10a2ff76a2d371787c609b4891f1c578e93f7868">
+        sha1="60a81d76ff367a8f66be8148937f1977e93773f3">
         <dex dex="D:\git\Projet\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9716a850af8286ad4304e3d05471ecb0b58c95fd\classes.dex" />
     </item>
     <item
@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="22.0.1"
-        sha1="fe42625851a29c761441a8913654dd254e144909">
+        sha1="6285ca3328ccb6387617d7214e4856c0655e60c1">
         <dex dex="D:\git\Projet\MySQL-PHP-JSON\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4c78352b21cbde0e499dec1916f6890310c404ba\classes.dex" />
     </item>
     <item
