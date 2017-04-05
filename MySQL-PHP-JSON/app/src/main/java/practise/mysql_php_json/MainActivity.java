@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     EditText firstname, lastname, age;
     Button insert, show;
     RequestQueue requestQueue;
-    String insertUrl = "http://192.168.1.87/Php/insertStudent.php";
-    String showUrl = "http://192.168.1.87/Php/showStudents.php";
+    String insertUrl = "http://localhost/Php/insertStudent.php";
+    String showUrl = "http://192.168.1.86/Php/showStudents.php";
     TextView result;
 
     @Override

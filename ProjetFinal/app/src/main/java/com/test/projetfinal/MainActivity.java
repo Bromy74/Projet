@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public List categories;
     public CategorieAdapter adapter;
     RequestQueue requestQueue;
-    String showUrl = "http://192.168.1.87/Php/showCategorie.php";
+    String showUrl = "http://192.168.1.86/Php/showStudents.php";
     ArrayList T_alimentaire_description = new ArrayList();
     ArrayList T_alimentaire = new ArrayList();
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.listView);
         requestQueue = Volley.newRequestQueue(getApplicationContext());
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                 showUrl, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -52,18 +52,18 @@ public class MainActivity extends AppCompatActivity {
                     Map<String, Categorie> categories1 = new HashMap<String, Categorie>();
 
                     for (int i = 0; i < etudiants.length(); i++) {
-                        JSONObject categoriessql = etudiants.getJSONObject(i);//i
+                        System.out.println("ttttttttttttttt");
 
-                        String nom = categoriessql.getString("nom");
-                        String description = categoriessql.getString("description");
-                        T_alimentaire_description.add(description);
-                        T_alimentaire.add(nom);
+                        JSONObject commerces = etudiants.getJSONObject(i);//i
+
+                        String firstname = commerces.getString("firstname");
+                        String lastname = commerces.getString("lastname");
+                        T_alimentaire_description.add(firstname);
+                        T_alimentaire.add(lastname);
 
 
                     }
-                    categories = genererCategorie(null,T_alimentaire,T_alimentaire_description);
-                    adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
-                    mListView.setAdapter(adapter);
+
 
 
                 } catch (JSONException e) {
@@ -85,7 +85,9 @@ public class MainActivity extends AppCompatActivity {
         ///categories = genererCategorie(null);
         ///adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
         ///mListView.setAdapter(adapter);
-
+        categories = genererCategorie(null,T_alimentaire,T_alimentaire_description);
+        adapter = new CategorieAdapter(MainActivity.this, categories, mListView);
+        mListView.setAdapter(adapter);
     }
 //---------------------------------------------------
 
